@@ -12,12 +12,15 @@ import { ListeusersComponent } from './dashboard/gestionutilisateurs/listeusers/
 import { UpdateuserComponent } from './dashboard/gestionutilisateurs/updateuser/updateuser.component';
 import { AjoutuserComponent } from './dashboard/gestionutilisateurs/ajoutuser/ajoutuser.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
+import { MyprofileComponent } from './myprofile/myprofile.component';
 
 const routes: Routes = [
 
-  
+  {path : '', redirectTo:'landingpage', pathMatch: 'full'},
+  {path : 'landingpage', component : LandingpageComponent},
   {path: 'login' , component: LoginComponent},
   {path : 'register', component : RegisterComponent},
+  {path : 'myprofile', component : MyprofileComponent},
   {path : 'landingpage', component : LandingpageComponent},
   {path : 'dashboard', component : DashboardComponent, children : [
 
@@ -32,7 +35,7 @@ const routes: Routes = [
     {path : 'gestionutilisateurs', component : GestionutilisateursComponent, children : [
       {path: '', redirectTo: 'list', pathMatch:'full'},
       {path : 'list', component: ListeusersComponent},
-      {path: 'update/:id', component: UpdateuserComponent},
+      {path: 'update', component: UpdateuserComponent},
       {path: 'ajout', component: AjoutuserComponent}
     ]},
   ]},

@@ -22,6 +22,7 @@ import { ListeusersComponent } from './dashboard/gestionutilisateurs/listeusers/
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { NavbarComponent } from './landingpage/layout/navbar/navbar.component';
 import { FooterbarComponent } from './landingpage/layout/footerbar/footerbar.component';
+import { MyprofileComponent } from './myprofile/myprofile.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { FooterbarComponent } from './landingpage/layout/footerbar/footerbar.com
     LandingpageComponent,
     NavbarComponent,
     FooterbarComponent,
+    MyprofileComponent,
    
   ],
   imports: [
